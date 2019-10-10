@@ -1,0 +1,51 @@
+.div1{
+    display: block;
+    font-size: 1.5cm;
+    text-align-last: center;
+    height: 60px;
+    color:white;
+    background-color: rgba(18, 14, 11, 3);
+    margin: 0px 395px 0px 395px;
+    padding: inherit;
+    border-radius: 20px;
+    
+}
+input[type="radio"]{
+    margin: 0px 20px 0px 0px;
+    
+}
+.div2{
+    text-align-last: center;
+    font-size: .7cm;
+    color: white;
+
+}
+#p1{
+    font-size: 20px;
+}
+body{
+    background-color: darkgrey;
+    background-image:url(../Documents/background_image.jpg);
+}
+.div3{
+  height: 400px;
+    background-color: rgba(18, 14, 11, 0.3);
+    color: white;
+    align-self: center;
+    margin: 0px 500px 0px 430px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+    transition:width 3s;
+    position: fixed;
+}
+.div3:hover{
+  height: 400px;
+    background-color: black;
+    color: white;
+     align-self: center;
+    margin: 0px 500px 0px 430px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+    
+}
+
