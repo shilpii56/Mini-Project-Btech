@@ -1,0 +1,95 @@
+body { margin: 0; font-family: monospace; font-size: 18px; min-width: 980px;}
+* { box-sizing: border-box;}
+/*remove annoying margin around headings */
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+.placeholder { /* this is temporary*/
+    padding: 20%;
+    font-size: 72;
+    color: #fff;
+}
+.text,p {
+    padding: 6%;
+    font-size: 24;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    background-color: #bbb;
+    border-top: 5px solid #ccc;
+}
+.content-container {
+    width: 85%;
+    position: relative;
+    right: 0;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    background-color: #F9F9F9; 
+    box-shadow: 0 0 10px #aaa;
+    z-index: -5;
+}
+.menus {
+    position: fixed; top: 0;
+    width: 100%;
+}
+ul.top-banner {
+    display: block;
+    list-style-type: none;
+    background-color: #e00769;
+    height: 200%;
+    text-align-last: center;
+    color: black;
+    width: 100%;
+    text-indent: 3%;
+    padding-left: 0; margin: 0;
+    z-index: 1;
+}
+ul.top-banner li {
+    padding: 8px;
+    font-size: 25px; 
+}
+ul.nav-bar {
+    display: block;
+    list-style-type: none;
+    background-color: #df126f;
+    width: 100%;
+    font-size: 23px;
+    padding: 5px; margin: 0;
+    border-width: 1px 0;
+    z-index: 2;
+    box-shadow: 0 6px 15px #aaa;
+}
+ul.nav-bar li {
+    padding: 8px 20px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+ul.side-nav {
+    position: relative; left: 0;
+    width: 15%; min-width: 150px;
+    list-style-type: none;
+    padding: 5px; margin: 0;
+    z-index: 1;
+}
+ul.side-nav li a {
+    padding: 8px 26px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+}
+ul.side-nav li a:hover {
+    background-color: #444; color: white;
+    cursor: pointer;
+}
+li{
+    height: 100%;
+}
