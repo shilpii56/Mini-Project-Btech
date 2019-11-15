@@ -1,0 +1,19 @@
+body {
+    font: normal 16px Arial, sans-serif;
+    background: #fafafa;
+    color: #2a3744;
+}
+
+.p1{
+    margin: 100px 0 40px;
+    text-align: center;
+}
+
+.p2 {
+    width: 500px;
+}
+
+.P3 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 51px;
+}
