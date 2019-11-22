@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+ 
+}
+input[type=number],[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.fill {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+ border-width: 5px;
+ border-color: black;
+ border-style: solid;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="fill">
+  <form method="post" action="solve-validation.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Enter your username(PHONE)</label>
+    </div>
+    <div class="col-75">
+     <input type="number" required placeholder="Confirm your identity" name="identity" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname"> Enter the Complain Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" required placeholder="complain number" name="complain_no">
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Give Feedback:</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="sol" placeholder="Enter Solution here..." style="height:200px" required></textarea>
+    </div>
+          <b> Set the complaint status (Choosing close will remove the complaint from your To-Do List)
+     <br></b>
+   <input type="radio" name="status" value="close" > Close<br>
+        <input type="radio" name="status" value="active" > Active<br>
+    <br>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+</body>
+</html>

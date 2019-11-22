@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <meta name="viewport" display="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+            <link rel="stylesheet" href="css/portfolio.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../Documents/L1c.css">
+        <link rel="stylesheet" href="user_login.html"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <div class="menus">
+            <ul class="top-banner">
+                <li style="font-family: fantasy">Secure Public Grievance Portal and Counselling </li>
+            </ul>
+            <ul class="nav-bar">
+                <li id="text" style="font-family: fantasy">USER PROFILE</li>  
+            </ul>
+            <ul class="side-nav">
+                   <br>
+                <br>
+                
+                <li style="text-align: center;" ><h4>Your Account</h4></li>
+                <li id="aboutme"><a href="#aboutMeContent">Our Profile</a></li>
+                
+                <li id="portfolio"><a href="#portfolioContent">Policy</a></li> 
+                <li id="contact"><a href="#contactContent">Contact</a>
+                   <br>
+                <br>
+                   <br>
+                       <br>
+                <br>
+                
+                <li style="text-align: center;" ><h4>Activities</h4></li>
+             
+                <li><a href="complain-form.html">New Complaint</a></li>
+                <li><a href="user-history-welcome.html">History</a></li>
+                <li><a href="feed.html">Suggestion Box</a></li><li><a href="user-inbox.-welcome.html">Inbox</a></li> 
+                <li><a href="user_login.html">Log Out</a></li>
+                
+                        
+            </ul>
+
+        </div>
+        <div class="content-container">
+           <div class="content">
+               <h3 style="text-align: center; margin-top: 10%; font-family: sans-serif;">Lodge Complains without social-fears</h3>
+               <span id="aboutMeContent"><span>
+                    <img style="position: relative;
+                        width: 25%; height: auto; border-radius: 50%;
+                        margin: 5% 35%;"
+                        src="portal.png" alt="selfie">WELCOME USER!
+                    <div class="text" style="color: white; width: 65%; float: left; font-size: 18px;">This is a secure public grievance portal and counselling center.Here,you can drop your complains regarding any social issues.Your identity will not be revealed to any particular.<br>To lodge a complaint go to 'New Complaint' bar on the left side and fill the required details. 
+                    </div>
+           </div>
+            <div class="content" id="portfolioContent">
+                      <?php include("user-login-validation.php"); ?> 
+                <div class="placeholder"><p style="font-size: 16px;">Your security is our concern. You can lodge complints and get feedbacks from specialists.You can then proceed for proper counselling.</p>
+                    <br>
+                    <p style="font-size: 18px; font-family:sans-serif; color:blueviolet;"><b> YOU ARE NOT ALONE! We will fight it together!</b> <script> var userid = document.getElementById("phone").value;
+document.write("Welcome " + userid);</script></div>
+    
+
+
+            </div>
+                
+                   
+            <div class="content" id="contactContent">
+                 <div class="placeholder"><p>
+                The contact details are:<br>Mobile:1234567890<br>Email:grievanceportal@gmail.com</p></div>
+            </div>
+        </div>
+         <br><hr style="width: 75%; margin: auto;">
+      
+    <script src="js/script.js"></script>
+    </body>
+</html>
+        <style>
+            body { margin: 0; font-family: monospace; font-size: 18px; min-width: 980px;}
+* { box-sizing: border-box;}
+/*remove annoying margin around headings */
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+.placeholder { /* this is temporary*/
+    padding: 20%;
+    font-size: 72;
+    color: #fff;
+}
+.text,p {
+    padding: 6%;
+    font-size: 24;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    background-color:#beadad;
+    border-top: 5px solid #ccc;
+}
+.content-container {
+    width: 85%;
+    position: relative;
+    right: 0;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    background-color: #F9F9F9; 
+    box-shadow: 0 0 10px #aaa;
+    z-index: -5;
+}
+.menus {
+    position: fixed; top: 0;
+    width: 100%;
+}
+ul.top-banner {
+    display: block;
+    list-style-type: none;
+    background-color: #e00769;
+    height: 200%;
+    text-align-last: center;
+    color: black;
+    width: 100%;
+    text-indent: 3%;
+    padding-left: 0; margin: 0;
+    z-index: 1;
+}
+ul.top-banner li {
+    padding: 8px;
+    font-size: 25px; 
+}
+ul.nav-bar {
+    display: block;
+    list-style-type: none;
+    background-color:  #e00769;
+    width: 100%;
+    font-size: 23px;
+    padding: 5px; margin: 0;
+    border-width: 1px 0;
+    z-index: 2;
+  
+}
+ul.nav-bar li {
+    padding: 8px 20px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+ul.side-nav {
+    position: relative; left: 0;
+    width: 15%; min-width: 150px;
+    list-style-type: none;
+    padding: 5px; margin: 0;
+    z-index: 1;
+}
+ul.side-nav li a {
+    padding: 8px 26px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+}
+ul.side-nav li a:hover {
+    background-color: #332e2e; color: white;
+    cursor: pointer;
+}
+li{
+    height: 100%;
+}
+        </style>
+        
+        

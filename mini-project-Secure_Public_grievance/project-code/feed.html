@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../Documents/feedcss.css">
+    <div class="div1">
+    <b>FEEDBACK</b>
+    </div><pre></pre>
+    <div class="div2">
+        <br>
+    Please provide your valuable feedback.
+        <br>
+        <br>
+    </div><pre></pre>
+    <div class="div3">
+    <form action="feedbacks.php" method="post">
+        <p id="p1">Mobile:<input name="id" type="digit" size="10"></p><br>
+        
+        <p>Do you find this website useful??</p>
+        Good:<input type="radio" value="good" name="useful">
+        Satisfactory:<input type="radio" value="satisfactory" name="useful">
+        Bad:<input type="radio" value="bad" name="useful"><br>
+        <br>
+        
+        Further Improvement Needed??<br><br>
+        Yes:<input type="radio" value="yes" name="yesorno">
+        No:<input type="radio" value="no" name="yesorno"><br>
+        <pre></pre>
+        
+        Easy to use??<br><br>
+        Yes:<input type="radio" value="yes" name="ease">
+        No:<input type="radio" value="yes" name="ease">
+        <pre></pre>
+        
+        Your comments:<br>
+<textarea name="comments" rows="5" cols="50">
+</textarea><br>
+                   <input type="submit" value="Submit">
+        
+        
+        </form>
+    </div>
+
+    </head>
+</html>
+<style>
+    .div1{
+    display: block;
+    font-size: 1.5cm;
+    text-align-last: center;
+    height: 60px;
+    color:white;
+    background-color: rgba(18, 14, 11, 3);
+    margin: 0px 395px 0px 395px;
+    padding: inherit;
+    border-radius: 20px;
+        left: 5.5%;
+        
+    
+}
+input[type="radio"]{
+    margin: 0px 20px 0px 0px;
+    
+}
+.div2{
+    text-align-last: center;
+    left: 5.5%;
+    font-size: .7cm;
+    color: white;
+
+}
+#p1{
+    font-size: 20px;
+}
+body{
+    background-color: darkgrey;
+    background-image:url(background_image.jpg);
+}
+.div3{
+  height: 420px;
+    background-color: rgba(18, 14, 11, 0.3);
+    color: white;
+   left:5.5%;
+    align-self: center;
+    margin: 0px 500px 0px 430px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+    transition:width 3s;
+    position: fixed;
+}
+.div3:hover{
+  height: 450px;
+    background-color: black;
+    color: white;
+     align-self: center;
+    margin: 0px 500px 0px 430px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+    
+}
+</style>
